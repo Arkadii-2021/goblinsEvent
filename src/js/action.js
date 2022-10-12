@@ -11,8 +11,8 @@ export default class Action {
   }
 
   onStart(res, modalWindow) {
-    res.innerHTML = parseInt(res.innerHTML) + 1;
-    if (parseInt(res.innerHTML) === 5) {
+    res.innerHTML = Number(res.innerHTML) + 1;
+    if (Number(res.innerHTML) === 5) {
       alert(modalWindow);
       this.newCount();
     }
